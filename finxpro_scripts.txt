@@ -1,0 +1,20 @@
+ALTER TABLE genmoduleidformsmst ADD controllername VARCHAR2(100);
+
+ALTER TABLE genmoduleidformsmst ADD actionname VARCHAR2(100);
+
+UPDATE genmoduleidformsmst SET controllername = 'SBCAAccountOpening', actionname ='SBCAAccountOpening' WHERE formsid = 241;
+
+UPDATE genmoduleidformsmst SET controllername = 'Customer', actionname ='Index' WHERE formsid = 113;
+
+UPDATE genmoduleidformsmst SET controllername = 'CashCounterMngt', actionname ='CashCounterMngt' WHERE formsid = 303;
+
+UPDATE genmoduleidformsmst SET controllername = 'CashCounterMngt', actionname ='CashAllotment' WHERE formsid = 200;
+
+UPDATE genmoduleidformsmst SET controllername = 'Cashacceptance', actionname ='Cashacceptance' WHERE formsid = 230;
+
+UPDATE genmoduleidformsmst SET controllername = 'Cashacceptance', actionname ='CashRefund' WHERE formsid = 233;
+
+UPDATE genmoduleidformsmst SET controllername = 'Cashacceptance', actionname ='CashRefundacceptance' WHERE formsid = 234;
+
+COMMIT;
+
